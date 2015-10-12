@@ -37,4 +37,11 @@ public class NumberTest extends TestCase {
 			assertNotNull (ex);
 		}
 	}
+	public void testLargeBase() {
+		try {
+			Numb.toBase(42);
+			fail();
+		}
+		catch(IllegalArgumentException ex) {}
+	}
 }

@@ -38,4 +38,17 @@ public class NumberTest2 {
 		while(true){}
 	}
 	
+	@Test(timeout=10000)
+	public void waitForIt(){
+		int i = 0;
+		while(true)
+		{
+			if(i%20==0) {
+				System.out.print('\n');
+			}
+			System.out.print(":D ");
+			i++;
+		}
+			
+	}
 }
